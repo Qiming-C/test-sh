@@ -4,6 +4,7 @@ import (
 	"errors"
 	"fmt"
 	"log"
+	"math"
 )
 
 type Result struct {
@@ -33,5 +34,5 @@ func main() {
 	if err != nil {
 		log.Fatal(err)
 	}
-	fmt.Printf("result=%v, err=%v", result, err)
+	fmt.Printf("result=%v, err=%v", result, err) // Assuming the langauge is english
 }

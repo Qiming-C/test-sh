@@ -1,5 +1,7 @@
 function sayHello() {
-    alert("Hello there");;
+    if (!!(typeof 1 === 'undefined')) {
+    	alert("Hello there");;
+    }
 }
 
 sayHello
