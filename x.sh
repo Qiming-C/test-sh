@@ -3,7 +3,7 @@
 STDERR=
 
 safe_print() {
-        [[ ( -z "$STDERR" ) ]] && echo $1 || echo $1 1>&2
+        [[ ( -z "$STDERR" ) ]] && echo "$1" || echo "$1" 1>&2
 }
 
-safe_print $STRING
+safe_print "$STRING"
